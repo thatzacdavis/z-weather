@@ -6,7 +6,7 @@ The main page shows the current weather as well as a short 3-day forecast for Ph
 
 ## Goal
 
-The goal of this project is to build something cool in JavaScript without using a framework. I chose to use the DarkSky API along with Skycons and FontAwesome to make a simple 3-day weather application with a historical view of the temperatures for Philly.
+The goal of this project is to build something cool in JavaScript without using a framework. I chose to use the [DarkSky API](https://darksky.net/dev) along with Skycons [Bootstrap 4](https://getbootstrap.com/), and [FontAwesome 5](https://fontawesome.com/) to make a simple 3-day weather application with a historical view of the temperatures for Philly. I also used it as a chance to learn how to use [Parcel](https://parceljs.org/).
 
 ## How to Run
 
