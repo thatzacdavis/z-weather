@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>z Weather</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <div class="container-md">
+        <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <h1 id="header"></h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-auto">
+                <div class="row justify-content-center">
+                    <h2 id="current-temp" class="text-center"></h2>
+                    <a href='./daily-history.html' id="historyLink"><i class="fas fa-history"></i></a>
+                </div>
+                <canvas id="summary-icon"></canvas>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <h2 id="summary"></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-auto">
+                <h3 id="daily-summary"></h3>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col">
+                <h2 id="today-temp" class="text-center"></h2>
+                <canvas id="today-icon" class="w-100"></canvas>
+                <h3 id="today-summary" class="text-center"></h3>
+            </div>
+            <div class="col border-left">
+                <h2 id="tomorrow-temp" class="text-center"></h2>
+                <canvas id="tomorrow-icon" class="w-100"></canvas>
+                <h3 id="tomorrow-summary" class="text-center"></h3>
+            </div>
+            <div class="col border-left">
+                <h2 id="day-after-temp" class="text-center"></h2>
+                <canvas id="day-after-icon" class="w-100"></canvas>
+                <h3 id="day-after-summary" class="text-center"></h3>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <img src="./img/poweredby-oneline.png" style="height: 3.5rem;" />
+        </div>
+    </div>
+
+    <script src="js/plugins.js"></script>
+    <script src="https://maxdow.github.io/skycons/skycons.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/weather.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

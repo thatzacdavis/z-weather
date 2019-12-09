@@ -1,0 +1,11 @@
+{
+"scripts": {
+    "start": "parcel *.html"
+},
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
+    "sass": "^1.23.7"
+  }
+}
