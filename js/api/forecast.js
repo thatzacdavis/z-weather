@@ -25,7 +25,7 @@ export function getHistory(callback) {
     const temps = [];
     let date = new Date();
 
-    for(let lcv=0; lcv<=10; lcv++) {
+    for(let lcv=1; lcv<=10; lcv++) {
         const currentTime = Math.trunc(date.getTime() / 1000);
         const historyURL = `${corsAnywhereURL}https://api.darksky.net/forecast/${apiKey}/${latitude},${longitude},${currentTime}`;
 
@@ -41,6 +41,6 @@ export function getHistory(callback) {
                 console.log(error);
             });
         
-        date.setFullYear(date.getFullYear() - lcv);
+        date.setFullYear(date.getFullYear() - 1);
     }
 }
